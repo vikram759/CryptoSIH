@@ -1,0 +1,120 @@
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Navigation Styles */
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    background-image: url('https://t4.ftcdn.net/jpg/04/51/96/93/360_F_451969390_fwd7fUNbLuQ0125iqpsV98d1u6Jy7GTY.jpg'); /* Add your background image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Explorer Section */
+.explorer {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.explorer h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.blockchain {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.blockchain-item {
+    flex: 1 1 200px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    position: relative; /* Allow for absolute positioning of the background */
+}
+
+.blockchain-item h3 {
+    margin: 0;
+}
+
+/* Background images for each blockchain */
+.blockchain-item.solana {
+    background-image: url('https://www.bytetree.com/content/images/2023/12/2023-12-14-solana-banner.jpg'); /* Add Solana background image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.blockchain-item.ethereum {
+    background-image: url('https://st.depositphotos.com/31895502/60400/i/450/depositphotos_604002854-stock-photo-ethereum-virtual-currency-images-illustrations.jpg'); /* Add Ethereum background image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.blockchain-item.ton {
+    background-image: url('https://www.shutterstock.com/image-illustration/toncoin-ton-cryptocurrency-gold-coin-260nw-2233683703.jpg'); /* Add TON background image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.blockchain-item.cardano {
+    background-image: url('https://thumbs.dreamstime.com/b/focus-cardano-coin-ada-symbol-cryptocurrency-black-background-isolate-219369438.jpg'); /* Add Cardano background image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.blockchain-item:hover {
+    transform: scale(1.05);
+}
+
+.blockchain-item a {
+    color: #fff;
+    font-weight: bold;
+    position: relative; /* For text visibility on background images */
+    z-index: 1; /* Ensure text is on top of background */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+}

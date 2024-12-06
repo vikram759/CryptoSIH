@@ -1,21 +1,162 @@
+
+/* Global Styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
+
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafbfd;
+    color: #333;
+}
+
+Link {
+    text-decoration: none;
+    color: #007bff;
+}
+
+Link:hover {
+    color: #0056b3;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  
+    color: #fff;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav Link {
+    margin: 0 15px;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    text-align: center;
+    color: #fff;
+ 
+    /* background-image: url('https://t4.ftcdn.net/jpg/04/23/18/83/360_F_423188362_B6iLBKbMypBLPHT5VzOF9KtfQjpaUvLV.jpg'); Add your background image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the container without distortion */
+    z-index: -1; /* Make sure the video stays behind the content */
+  }
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.hero Link {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.hero Link:hover {
+    background-color: #e0e0e0;
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.features h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    flex: 1 1 300px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.feature-item img {
+    width: 80px;
+    height: 80px;
+}
+
+.feature-item h3 {
+    margin: 10px 0;
+}
+
+.feature-item h3>Link{
+   color: rgb(37, 99, 235);
+   font-weight: 600;
+
+}
+.feature-item h3>Link:hover{
+   color: rgb(21, 63, 128);
+
+}
+
+.feature-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
 }
