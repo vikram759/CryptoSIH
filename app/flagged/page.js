@@ -68,7 +68,7 @@ const page = () => {
     
 <Navbar bool1={false}/>
 
-    <div className='mb-[100px] text-red-500 text-lg font-semibold'>
+    <div className='mb-[99px] text-red-500 text-lg font-semibold'>
        Suspicious
     </div>
 
