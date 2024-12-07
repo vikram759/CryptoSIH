@@ -15,7 +15,7 @@ export default function Home() {
     <Navbar bool1={true}/>
      <div className="hero  video pb-52">
         <h1 className="">Welcome to P2P Transaction Tracker</h1>
-        <video autoPlay loop muted>
+        <video autoPlay={true} loop muted>
     <source src="/12421669_3840_2160_30fps.mp4" type="video/mp4"/>
     Your browser does not support the video tag.
   </video>
