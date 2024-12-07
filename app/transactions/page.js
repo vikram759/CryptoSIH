@@ -177,12 +177,14 @@ const Page= () => {
       {transactions.map(item=>{
 
         return(<>
+      <Link key={item.transaction_id} href={`/transaction/${item.transaction_id}`}>
      
-        <div key={item.transaction_id} className='w-full h-[35px] shadow-md bg-white flex text-[15px]  '>
+        <div  className='w-full h-[35px] shadow-md bg-white flex text-[15px]  '>
         
-        <Link href={`/transaction/${item.transaction_id}`}>
+    
+      
         <div className='overflow-hidden w-[10%] h-[35px] text-blue-600 '>{item.transaction_id}</div>
-        </Link>
+      
         <div className=' w-[10%]  text-blue-600'>{item.status}</div>
         <div className=' w-[11%]   p-2  text-center rounded-[4px] m-auto'><div className='h-[25px] w-[120px] p-1 rounded-[10px] mb-[5px] bg-gray-300'>{item.method}</div></div>
         <div className=' w-[12.5%]  '>{item.age}</div>
@@ -192,7 +194,7 @@ const Page= () => {
         <div className=' w-[15%]  '>{item.transaction_fee}</div>
 
         </div>
- 
+ </Link>
         </>)
       })}
       
