@@ -142,6 +142,14 @@ if(bool1){
                 Pending Transactions
               </Link>
             </li>
+            <li>
+              <Link
+                href="/blocks"
+                className="block px-4 py-2 text-gray-200 hover:bg-gray-600 hover:text-white"
+              >
+               Block Txns
+              </Link>
+            </li>
 
           </ul>
         </li>
@@ -340,6 +348,14 @@ else{
                 className="block px-4 py-2 text-gray-200 hover:bg-gray-600 hover:text-white"
               >
                 Previous Transactions
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/blocks"
+                className="block px-4 py-2 text-gray-200 hover:bg-gray-600 hover:text-white"
+              >
+               Block Txs
               </Link>
             </li>
           </ul>

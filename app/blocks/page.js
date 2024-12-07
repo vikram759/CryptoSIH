@@ -69,7 +69,7 @@ const Page= () => {
 <Navbar bool1={false}/>
 
     <div className='mb-[100px] text-lg font-semibold'>
-        Transactions
+       Blocks
     </div>
 
     <div className='w-[80vw] border h-[2px] border-gray-200'>
@@ -79,16 +79,16 @@ const Page= () => {
     <div className="    w-[100vw] flex justify-center gap-3 ">
  <div className="shadow-lg group hover:shadow-xl flex flex-col items-start justify-center gap-3 rounded-[10px]  h-[100px] w-[300px] bg-white">
 
-   <div className="text-gray-800 text-sm ml-2">TRANSACTIONS</div>
+   <div className="text-gray-800 text-sm ml-2">NETWORK UTILiZATION(24h)</div>
 
-      <div className="text-xl text-black group-hover:text-blue-800">123.1 Million</div>
+      <div className="text-xl text-black group-hover:text-blue-800">50.3%</div>
 
    </div>
    <Link href="/pendingtxs">
     <div className="shadow-lg group hover:shadow-xl flex flex-col items-start justify-center gap-3 rounded-[10px]  h-[100px] w-[300px] bg-white">
 
-        <div className="text-gray-800 text-sm ml-2">PENDING TRANSACTIONS(24 hrs)</div>
-    <div className="text-xl text-black group-hover:text-blue-800">121,000</div>
+        <div className="text-gray-800 text-sm ml-2">LAST SAFE BLOCK</div>
+    <div className="text-xl text-black group-hover:text-blue-800">2439873</div>
 
         </div>
 
@@ -101,8 +101,8 @@ const Page= () => {
         </div>
     <div className="shadow-lg group hover:shadow-xl flex flex-col items-start justify-center gap-3 rounded-[10px]  h-[100px] w-[300px] bg-white">
 
-        <div className="text-gray-800 text-sm ml-2">AVG EXCHANGED AMOUNT(24hrs)</div>
-    <div className="text-xl text-black group-hover:text-blue-800">$200,000</div>
+        <div className="text-gray-800 text-sm ml-2">BURNT FEE</div>
+    <div className="text-xl text-black group-hover:text-blue-800">87438 BTC</div>
 
         </div>
        
@@ -164,14 +164,14 @@ const Page= () => {
         </div>
 
         <div className='w-full  bg-white flex text-[13px] shadow-md font-bold '>
-        <div className='w-[10%]'>Transaction ID</div>
-        <div className='w-[10%]'>Status</div>
-        <div className='w-[12.5%] text-center'>Method</div>
+        <div className='w-[10%]'>Block</div>
+        <div className='w-[10%]'>Slot</div>
+        <div className='w-[12.5%] text-center'>Txn</div>
         <div className='w-[12.5%] text-blue-600'>Age</div>
-        <div className='w-[12.5%]'>Sender&apos;s ID</div>
-        <div className='w-[12.5%]'>Receiver&apos;s ID</div>\
-        <div className='w-[15%] text-blue-600'>Amount</div>
-        <div className='w-[15%] text-blue-600'>Transaction fee</div>
+        <div className='w-[12.5%]'>Fee receipent</div>
+        <div className='w-[12.5%]'>Base Fee</div>
+        <div className='w-[15%] text-blue-600'>Reward</div>
+        <div className='w-[15%] text-blue-600'>Burnt Fee</div>
 
         </div>
       {transactions.map(item=>{
