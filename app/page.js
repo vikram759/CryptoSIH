@@ -69,15 +69,15 @@ export default function Home() {
                 <h3><Link className="text-blue-600 font-bold text-xl hover:text-blue-800" href="/cryptrail">Blockchain Explorer</Link></h3> 
                 <p>Track transactions across various blockchain networks with real-time updates.</p>
             </div>
-            <div className="feature-item flex flex-col justify-around items-center">
+            {/* <div className="feature-item flex flex-col justify-around items-center">
                 <img src="/icons8-crypto-100.png" alt="Blockchain Icon"/>
-                <h3><Link className="text-blue-600 font-bold text-xl hover:text-blue-800" href="/cryptrail">See Previous Logs</Link></h3> 
-                <p>Track transactions across various blockchain networks with real-time updates.</p>
-            </div>
+                <h3><Link className="text-blue-600 font-bold text-xl hover:text-blue-800" href="/transaction">See Previous Logs</Link></h3> 
+                <p>See the record of previous transactions.</p>
+            </div> */}
             <div className="feature-item flex flex-col justify-around items-center">
                 <img src="/icons8-cdn-100.png" alt="Blockchain Icon"/>
                 <h3><Link className="text-blue-600 font-bold text-xl hover:text-blue-800" href="/cryptrail">Delete Logs</Link></h3> 
-                <p>Track transactions across various blockchain networks with real-time updates.</p>
+                <p>You can delete any previous log.</p>
             </div>
             <div className="feature-item flex flex-col justify-around items-center">
                 <img src="https://cdn-icons-png.flaticon.com/512/2020/2020494.png" alt="Crypto Icon"/>
@@ -89,15 +89,17 @@ export default function Home() {
                 <h3 className="font-bold text-xl">Advanced Analytics</h3>
                 <p>Get insights into blockchain trends and transaction patterns.</p>
             </div>
+           
+            <div className="feature-item flex flex-col justify-around items-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/4204/4204814.png" alt="Suspicious Activity Icon"/>
+                <h3><Link className="text-blue-600 font-bold text-xl hover:text-blue-800" href="/flagged">Suspicious Activity Alert</Link></h3>
+                <p>Receive alerts for transactions flagged as suspicious, helping to mitigate fraudulent activities.</p>
+            </div>
+
             <div className="feature-item flex flex-col justify-around items-center">
                 <img src="https://cdn-icons-png.flaticon.com/512/1041/1041856.png" alt="Traceability Icon"/>
                 <h3 className="font-bold text-xl">Transaction Traceability</h3>
                 <p>Trace peer-to-peer crypto transactions to uncover beneficiary details and transaction origins.</p>
-            </div>
-            <div className="feature-item flex flex-col justify-around items-center">
-                <img src="https://cdn-icons-png.flaticon.com/512/4204/4204814.png" alt="Suspicious Activity Icon"/>
-                <h3 className="font-bold text-xl">Suspicious Activity Alerts</h3>
-                <p>Receive alerts for transactions flagged as suspicious, helping to mitigate fraudulent activities.</p>
             </div>
             <div className="feature-item flex flex-col justify-around items-center">
                 <img src="https://cdn4.vectorstock.com/i/1000x1000/16/48/growing-graph-colored-outline-icon-on-dark-vector-21381648.jpg" alt="Reporting Icon"/>

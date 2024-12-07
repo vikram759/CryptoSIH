@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form';
 
 import "./log.css"
 
-const page = () => {
+const Page= () => {
   
   
   
@@ -97,4 +97,4 @@ const page = () => {
   );
 }
 
-export default page;
+export default Page;

@@ -28,7 +28,7 @@ import { v4 as uuidv4 } from 'uuid';
 // export default Navbar;
 import Link from "next/link";
 
-const Navbar = React.memo(({bool1}) => {
+const Navbar = ({bool1}) => {
   console.log("Navbar is rendered")
   const {removeAlert,alerts,addToCart,clearAlert}=useContext(AlertContext);
   
@@ -460,6 +460,6 @@ else{
   );
 
 }
-});
+};
 
 export default Navbar;

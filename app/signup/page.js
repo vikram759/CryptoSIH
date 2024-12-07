@@ -7,7 +7,7 @@ import { useForm } from 'react-hook-form';
 
 import "./sign.css"
 
-const page = () => {
+const Page= () => {
   
     const [submitting,setsubmitting]=useState(false)
   
@@ -114,4 +114,4 @@ const page = () => {
   );
 }
 
-export default page;
+export default Page;

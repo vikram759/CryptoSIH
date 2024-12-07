@@ -21,7 +21,7 @@ useEffect(() => {
  }
  
   
-}, [])
+}, [ls])
 
 function clearAlert(){
  setalerts([]);

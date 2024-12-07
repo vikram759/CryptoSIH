@@ -7,7 +7,7 @@ import Navbar from '@/components/Navbar';
 
 import Link from 'next/link';
 
-const page = () => {
+const Page = () => {
  
   const [transactions, setTransactions] = useState([]);
   const [count, setcount] = useState(0);
@@ -165,8 +165,8 @@ const page = () => {
         <div className='w-[10%]'>Status</div>
         <div className='w-[12.5%] text-center'>Method</div>
         <div className='w-[12.5%] text-blue-600'>Age</div>
-        <div className='w-[12.5%]'>Sender's ID</div>
-        <div className='w-[12.5%]'>Receiver's ID</div>
+        <div className='w-[12.5%]'>Sender&apos;s ID</div>
+        <div className='w-[12.5%]'>Receiver&apos;s ID</div>
         <div className='w-[15%] text-blue-600'>Amount</div>
         <div className='w-[15%] text-blue-600'>Transaction fee</div>
 
@@ -204,4 +204,4 @@ const page = () => {
   );
 }
 
-export default page;
+export default Page

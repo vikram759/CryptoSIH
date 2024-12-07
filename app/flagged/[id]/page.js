@@ -26,11 +26,11 @@ const page = ({params}) => {
       <div className='w-[80%] mt-[60px] flex flex-col justify-around bg-gray-200 rounded-lg m-auto h-[300px]'>
          <div className='flex w-[80%] m-auto h-[60px] justify-between p-2 '>
             <div>
-         <div className='text-sm text-gray-700'>Sender's ID</div>
+         <div className='text-sm text-gray-700'>Sender&apos;s ID</div>
          <div className='text-lg text-black'>jdwhfdjhfedjwnduf</div>
             </div>
             <div>
-         <div className='text-sm text-gray-700'>Receiver's ID</div>
+         <div className='text-sm text-gray-700'>Receiver&apos;s ID</div>
          <div className='text-lg text-black'>dnjenjejvnrjv</div>
             </div>
          
