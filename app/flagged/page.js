@@ -175,7 +175,7 @@ const Page= () => {
 
         return(<>
         
-        <Link key={item.transaction_id} href={`/transaction/${item.transaction_id}`}>
+        <Link key={item.transaction_id} href={`/flagged/${item.transaction_id}`}>
      
      <div  className='w-full h-[35px] shadow-md bg-white flex text-[15px]  '>
      
