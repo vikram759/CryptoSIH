@@ -13,7 +13,7 @@ import { v4 as uuidv4 } from 'uuid';
 //   return (
 //     <nav>
 //     <div className="logo">
-//         <h1>CryptTrail</h1>
+//         <h1>CryptTrail</h1>\
 //     </div>
 //     <div className='flex w-[400px] justify-around item-center'>
 //         <a className='px-3 h-[20px] w-[80px] hover:text-blue-800' href="/">Home</a>
@@ -259,9 +259,7 @@ if(bool1){
         Clear
         </li> 
 
-        <li className='cursor-pointer'>
-              <Link href="/login">Login</Link>
-            </li>
+  
         {/* Static Links */}
      
       </ul>
@@ -466,9 +464,6 @@ else{
         Clear
         </li>
 
-        <li className='cursor-pointer'>
-              <Link href="/login">Login</Link>
-            </li>
         {/* Static Links */}
      
       </ul>

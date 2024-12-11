@@ -114,6 +114,16 @@ export default function Home() {
         <h2 className="font-bold text-3xl mb-2">About Blockchain Tracker</h2>
         <p>Blockchain Tracker is a platform designed to help users track and analyze blockchain transactions in real time, providing crucial data for better decision-making.</p>
     </div>
+   
+   <div>
+
+    <Link href="/login" className='text-blue-500 cursor-not-allowed'>
+Go to the link
+
+</Link>
+
+   </div>
+   
 
     <Footer/>
     </>
