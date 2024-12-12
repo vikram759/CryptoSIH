@@ -89,21 +89,7 @@ if(bool1){
           {/* Dropdown Menu */}
        
         </li>
-        <li className="relative group">
-          <div className='group'>
-          <Link
-            href="/aboutus"
-            className="text-white hover:text-gray-300 relative group"
-          >
-            About
-            {/* Underline effect */}
-          </Link>
-            <span className="absolute mt-[40px] left-0 bottom-0 h-0.5 bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
-
-          </div>
-          {/* Dropdown Menu */}
-     
-        </li>
+        
         <li className="relative group">
           <div className='group'>
           <Link
@@ -201,63 +187,29 @@ if(bool1){
            
               </>)
             })}
-            
-         
-           
-         
-          </ul>
-
-          </div>
-        </li>
-        <li className="relative group">
+            <li className="relative group">
           <div className='group'>
           <Link
-            href="#"
+            href="/aboutus"
             className="text-white hover:text-gray-300 relative group"
           >
-            Filters
+           check suspicious
             {/* Underline effect */}
           </Link>
             <span className="absolute mt-[40px] left-0 bottom-0 h-0.5 bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
 
           </div>
           {/* Dropdown Menu */}
-          <ul className="absolute left-0 hidden w-40 mt-2 bg-gray-700 rounded-lg shadow-lg group-hover:block group-focus-within:block">
-            <li>
-              <Link
-                href="#"
-                className="block px-4 py-2 text-gray-200 hover:bg-gray-600 hover:text-white"
-              >
-                Bitcoin
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className="block px-4 py-2 text-gray-200 hover:bg-gray-600 hover:text-white"
-              >
-               Etherum
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className="block px-4 py-2 text-gray-200 hover:bg-gray-600 hover:text-white"
-              >
-                Submenu 3
-              </Link>
-            </li>
-           
-          </ul>
-        </li>
-        <li onClick={()=>{addToCart({transaction_id:uuidv4()})}}>
-          Add
-        </li>
-
      
-        <li onClick={()=>{clearAlert()}}>
-        Clear
-        </li> 
+        </li>
+         
+           
+         
+          </ul>
+
+          </div>
+        </li>
+    
 
   
         {/* Static Links */}
@@ -295,21 +247,7 @@ else{
           {/* Dropdown Menu */}
 
         </li>
-        <li className="relative group">
-          <div className='group'>
-          <Link
-            href="/aboutus"
-            className="text-white hover:text-gray-300 relative group"
-          >
-            About
-            {/* Underline effect */}
-          </Link>
-            <span className="absolute mt-[40px] left-0 bottom-0 h-0.5 bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
-
-          </div>
-          {/* Dropdown Menu */}
-      
-        </li>
+       
         <li className="relative group">
           <div className='group'>
           <Link
@@ -342,7 +280,7 @@ else{
             </li>
             <li>
               <Link
-                href="/previoustxs"
+                href="/pendingtxs"
                 className="block px-4 py-2 text-gray-200 hover:bg-gray-600 hover:text-white"
               >
                 Previous Transactions
@@ -415,54 +353,24 @@ else{
 
           </div>
         </li>
+
         <li className="relative group">
           <div className='group'>
           <Link
-            href="#"
+            href="/aboutus"
             className="text-white hover:text-gray-300 relative group"
           >
-            Filters
+            Check suspicious transactions here
             {/* Underline effect */}
           </Link>
             <span className="absolute mt-[40px] left-0 bottom-0 h-0.5 bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
 
           </div>
           {/* Dropdown Menu */}
-          <ul className="absolute left-0 hidden w-40 mt-2 bg-gray-700 rounded-lg shadow-lg group-hover:block group-focus-within:block">
-            <li>
-              <Link
-                href="#"
-                className="block px-4 py-2 text-gray-200 hover:bg-gray-600 hover:text-white"
-              >
-                Bitcoin
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className="block px-4 py-2 text-gray-200 hover:bg-gray-600 hover:text-white"
-              >
-               Etherum
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className="block px-4 py-2 text-gray-200 hover:bg-gray-600 hover:text-white"
-              >
-                Submenu 3
-              </Link>
-            </li>
-           
-          </ul>
+      
         </li>
 
-        <li onClick={()=>{addToCart({transaction_id:uuidv4()})}}>
-          Add
-        </li>
-        <li onClick={()=>{clearAlert()}}>
-        Clear
-        </li>
+     
 
         {/* Static Links */}
      
